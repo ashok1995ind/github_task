@@ -1,0 +1,25 @@
+.full-content {
+  background: #dedede;
+
+  .header {
+    background-color: #4c4c4c;
+    color: white;
+    padding: 15px;
+  }
+
+  .button-group {
+    position: absolute;
+    right: 0px;
+    z-index: 999
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4c4c4c;
+  color: white;
+  text-align: center;
+}

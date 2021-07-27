@@ -1,0 +1,20 @@
+<h4><span *ngIf="this.user && this.user.name">{{this.user.name}}'s</span> Account</h4>
+<hr>
+
+<div class="card" *ngIf="this.user">
+  <a href="{{this.user.repos_url}}"><img src="{{this.user.avatar_url}}" class="card-img-top"></a>
+  <div class="card-body">
+    <h3 class="card-title text-uppercase">{{this.user.login}}</h3>
+    <h6>#ID: {{this.user.git_id}}</h6>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <h6>Joined At:</h6><span>{{this.user.created_at | date:'fullDate'}}</span>
+    </li>
+    <li class="list-group-item">
+      <h6>Repositories: <small>{{this.user.public_repos}}</small></h6>
+      <h6>Followers: <small>{{this.user.followers}}</small></h6>
+      <h6>Following: <small>{{this.user.following}}</small></h6>
+    </li>
+  </ul>
+</div>

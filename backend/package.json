@@ -1,0 +1,32 @@
+{
+  "name": "GitHub task",
+  "version": "1.0.0",
+  "description": "Application to manage the github users and their repos",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "rest",
+    "express",
+    "node"
+  ],
+  "author": "ashok (ashok1995ind@gmail.com)",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "fs": "0.0.1-security",
+    "logger": "0.0.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.13.3",
+    "node-cron": "^2.0.3",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  }
+}

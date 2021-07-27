@@ -1,0 +1,36 @@
+<div class="container full-content">
+  <div class="jumbotron">
+    <div class="container header">
+      <h1 class="display-4">GitHub</h1>
+      <p class="lead">Get the git hub repos and the user details.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" [formControl]="username" placeholder="Search">
+            <span class="input-group-btn button-group">
+              <button class="btn btn-primary" type="button" (click)="getData()">Submit</button>
+            </span>
+          </div>
+          <div class="alert alert-danger" *ngIf="!this.username.valid && isSubmit" role="alert">
+            Username is Required
+          </div>
+          <div class="alert alert-danger" *ngIf="this.error?.error?.msg" role="alert">
+            {{this.error.error.msg}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="row content">
+    <div class="col-md-3 col-12-5 col-xs-12 sidenav">
+      <app-user></app-user>
+    </div>
+    <div class="col-md-9 col-12-7 col-xs-12">
+      <app-repos></app-repos>
+    </div>
+  </div>
+  <div class="footer">
+    <p>GitHub</p>
+  </div>
+</div>
